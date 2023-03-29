@@ -1,0 +1,41 @@
+api:
+  name: POLICY
+  packName: subschema-tools
+  modName: subgraph-tools
+  modVer: 1.3.7
+  modCopy: true
+  createFiles: true
+  skipExistingFiles: false
+  recreateTypeFiles: true
+  recreateArgs: true
+  recreateFields: true
+package:
+  recreate: true
+  name: graphql-policy
+  version: 2.0.0
+  dependencies:
+    - subgraph-tools: 'file:packages/subgraph-tools-1.3.7.tgz'
+ecosystem:
+  recreate: true
+  GRAPHQL_PATH: /
+  SCHEMA_CONFIG: pattern-001.yaml
+  development:
+    DATABASE01_USER: DATABASE01_USER
+    DATABASE01_PASS: DATABASE01_PASS
+    DATABASE01_DB_NAME: DATABASE01_DB_NAME
+    DATABASE01_HOST: DATABASE01_HOST
+    DATABASE01_PORT: 1433
+    PORT: 8080
+    API_URL: 'http://localhost:4000/gateway'
+  localhost:
+    DATABASE01_USER: DATABASE01_USER
+    DATABASE01_PASS: DATABASE01_PASS
+    DATABASE01_DB_NAME: DATABASE01_DB_NAME
+    DATABASE01_HOST: DATABASE01_HOST
+    DATABASE01_PORT: 1433
+    PORT: 8093
+    API_URL: 'http://localhost:8093'
+    watch:
+      - src/schema/types
+      - src/index.js
+      - package.json

@@ -1,0 +1,21 @@
+apps:
+  - name: env
+    active: true
+    override_copy: true
+    override_version_adjust: false
+  - name: POLICY-API
+    active: false
+    folder_module: subschema-tools
+    name_module: subgraph-tools
+    folder_proj: PROJ_POLICY
+    folder_pack: packages
+    module_copy: true
+    version_adjust: false 
+  - name: GATEWAY-API
+    active: false
+    folder_module: superschema-tools
+    name_module: supergraph-tools
+    folder_proj: REP.SRV001
+    folder_pack: packages
+    module_copy: true
+    version_adjust: false 

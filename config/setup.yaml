@@ -1,0 +1,55 @@
+projects:
+  - name: env
+    folder_submodule: subschema-tools
+    name_submodule: subgraph-tools
+    folder_supermodule: superschema-tools
+    name_supermodule: supergraph-tools
+    folder_pack: packages
+
+  - name: POCSUB
+    mod_type: subgraph
+    modVer: 1.3.7
+    active_proj: false
+    active_repo: false
+    folder_proj: PROJ-001-SUB-SCHEMA
+    folder_repo: false
+    modcopy_proj: true
+    modcopy_repo: false
+    veradjust_proj: false
+    veradjust_repo: false
+
+  - name: POC-SUPERSCHEMA
+    mod_type: subgraph
+    modVer: 1.3.7
+    active_proj: false
+    active_repo: false
+    folder_proj: PROJ-002-SUPER-SCHEMA
+    folder_repo: false
+    modcopy_proj: true
+    modcopy_repo: false
+    veradjust_proj: false
+    veradjust_repo: false
+
+  - name: POLICY
+    mod_type: subgraph
+    modVer: 1.3.7
+    active_proj: true
+    active_repo: false
+    folder_proj: PROJ-002-POLICY
+    folder_repo: REP.SRV002
+    modcopy_proj: true
+    modcopy_repo: false
+    veradjust_proj: false
+    veradjust_repo: false
+
+  - name: GATEWAY
+    mod_type: supergraph
+    modVer: 1.3.7
+    active_proj: true
+    active_repo: false
+    folder_proj: PROJ-001-GATEWAY
+    folder_repo: REP.SRV001
+    modcopy_proj: true
+    modcopy_repo: false
+    veradjust_proj: false
+    veradjust_repo: false
